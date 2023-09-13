@@ -1,5 +1,6 @@
 # Project of testes - Alura course
 ### working with RobotFramework and Python
+![robot framework logo](https://l1nk.dev/6bMVn)
 
 ## Setup SO: MAC
 - Install the Python: https://www.python.org/downloads/
