@@ -1,7 +1,7 @@
 *** Settings ***
 Library         SeleniumLibrary
 Library         FakerLibrary    # robotcode: ignore
-Resource        ../setup_teardown.robot
+Resource        setup_teardown.robot
 Test Setup      Open the browser
 Test Teardown   Close the browser
 

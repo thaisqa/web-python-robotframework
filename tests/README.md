@@ -1,8 +1,7 @@
 # Project of testes - Alura course
 ### working with RobotFramework and Python
-![robot framework logo](https://i.ytimg.com/vi/WIIm6eeqKM4/maxresdefault.jpg)
 
-## Setup SO: MAC
+## Setup MAC
 - Install the Python: https://www.python.org/downloads/
 
 - Install the Node: https://nodejs.org/pt-br
@@ -26,7 +25,4 @@ extract the folder and copy the chromedriver file and paste in user folder
 
 
 ## Run the tests
-- Access the tests folder:
-> $ cd tests
-- Run the tests cases
-> $ robot tests_cases
+> $ robot tests
