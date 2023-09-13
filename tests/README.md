@@ -8,9 +8,9 @@
 - Install the Node: https://nodejs.org/pt-br
 
 - Install the RobotFramework:
-$ pip install robotframework 
+> $ pip install robotframework 
 OR 
-$ pip3 install robotframework
+> $ pip3 install robotframework
 
 $ pip install --upgrade robotframework-seleniumlibrary
   OR
