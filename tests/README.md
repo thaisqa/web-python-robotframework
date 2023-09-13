@@ -6,9 +6,7 @@
 
 - Install the Node: https://nodejs.org/pt-br
 
-- Download the ChromeDriver: https://chromedriver.chromium.org/downloads
-
-save the chromedriver file in user folder
+- Download and save the chromedriver file in user folderthe ChromeDriver: https://chromedriver.chromium.org/downloads
 
 - Install the RobotFramework and the libraries:
 > $ pip3 install robotframework
