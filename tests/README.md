@@ -11,9 +11,14 @@
 $ pip install robotframework 
 OR 
 $ pip3 install robotframework
+
 $ pip install --upgrade robotframework-seleniumlibrary
   OR
-$ pip install --upgrade robotframework-seleniumlibrary
+$ pip3 install --upgrade robotframework-seleniumlibrary
+
+$ pip install robotframework-faker
+OR
+$ pip3 install robotframework-faker
 
 - Download the ChromeDriver: https://chromedriver.chromium.org/downloads
 extract the folder and copy the chromedriver file and paste in user folder
@@ -36,4 +41,4 @@ $ npm start
 
 - Access the tests folder and run:
 $ cd tests
-$ robot first_test.robot
+$ robot tests_cases
