@@ -28,13 +28,13 @@ Verify if the informations are input correctly
 
 *** Keywords ***
 Given I input the informations on form
-    ${Nome}          FakerLibrary.First Name
-    # ${Cargo}            FakerLibrary.Job
-    # ${Imagem}           FakerLibrary.Image Url
+    ${Name}          FakerLibrary.First Name    # robotcode: ignore
+    ${Job}           FakerLibrary.Job    # robotcode: ignore
+    ${Image}         FakerLibrary.Image Url    # robotcode: ignore
 
-    Input Text       ${INPUT_NAME}      ${Nome}
-    Input Text       ${INPUT_JOB}       QA
-    Input Text       ${INPUT_IMAGE}     https://picsum.photos/200/300 
+    Input Text       ${INPUT_NAME}      ${Name}
+    Input Text       ${INPUT_JOB}       ${Job}
+    Input Text       ${INPUT_IMAGE}     ${Image}
     Click Element    ${LIST_GROUP} 
     Click Element    ${OPTION_PROGRAMACAO} 
 
