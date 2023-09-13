@@ -14,7 +14,8 @@
 > $ pip3 install robotframework-faker
 
 - Download the ChromeDriver: https://chromedriver.chromium.org/downloads
-extract the folder and copy the chromedriver file and paste in user folder
+
+save the chromedriver file in user folder
 
 ## Start application
 - Access the application folder
