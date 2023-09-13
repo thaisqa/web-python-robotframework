@@ -1,6 +1,6 @@
 # Project of testes - Alura course
 ### working with RobotFramework and Python
-![robot framework logo](https://l1nk.dev/6bMVn)
+![robot framework logo](https://i.ytimg.com/vi/WIIm6eeqKM4/maxresdefault.jpg)
 
 ## Setup SO: MAC
 - Install the Python: https://www.python.org/downloads/
@@ -9,7 +9,9 @@
 
 - Install the RobotFramework and the libraries:
 > $ pip3 install robotframework
+
 > $ pip3 install --upgrade robotframework-seleniumlibrary
+
 > $ pip3 install robotframework-faker
 
 - Download the ChromeDriver: https://chromedriver.chromium.org/downloads
