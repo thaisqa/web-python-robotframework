@@ -6,16 +6,16 @@
 
 - Install the Node: https://nodejs.org/pt-br
 
+- Download the ChromeDriver: https://chromedriver.chromium.org/downloads
+
+save the chromedriver file in user folder
+
 - Install the RobotFramework and the libraries:
 > $ pip3 install robotframework
 
 > $ pip3 install --upgrade robotframework-seleniumlibrary
 
 > $ pip3 install robotframework-faker
-
-- Download the ChromeDriver: https://chromedriver.chromium.org/downloads
-
-save the chromedriver file in user folder
 
 ## Start application
 - Access the application folder
