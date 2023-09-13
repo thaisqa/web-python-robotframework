@@ -16,6 +16,7 @@ ${OPCAO_DEVOPS}           //option[contains(.,'Devops')]
 ${OPCAO_UX}               //option[contains(.,'UX e Design')]
 ${OPCAO_MOBILE}           //option[contains(.,'Mobile')]
 ${OPCAO_INOVACAO}         //option[contains(.,'Inovação e Gestão')]
+${CARD_COLABORADOR}       class:colaborador
 
 *** Test Cases ***
 Verify if the informations are input correctly
@@ -39,4 +40,4 @@ When I click on Create card button
     Click Element    ${BOTAO_CARD}  
 
 Then The new card is created
-    Element Should Be Visible    class:colaborador    
+    Element Should Be Visible    ${CARD_COLABORADOR}
