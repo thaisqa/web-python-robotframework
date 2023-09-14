@@ -1,5 +1,6 @@
 # Project of testes - Alura course
 ### working with RobotFramework and Python
+### working with CI (continuous integration) - githubAction
 
 ## Setup MAC
 - Install the Python: https://www.python.org/downloads/

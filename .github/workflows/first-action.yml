@@ -15,6 +15,11 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello, world Thata!
+
+      - name: Start the application
+        run: cd application
+        run: npm install
+        run: npm start
   #     - name: Run a multi-line script
   #       run: |
   #         echo Add other actions to build,
