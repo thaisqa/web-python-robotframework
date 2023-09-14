@@ -17,8 +17,8 @@ jobs:
         run: echo Hello, world Thata!
 
       - name: Start the application
-        run: npm start
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo Add other actions to build,
-  #         echo test, and deploy your project.    
+        run: |
+          cd application
+          npm install
+          npm start
+          echo start website application   
