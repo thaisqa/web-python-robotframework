@@ -17,5 +17,5 @@ jobs:
         run: echo Hello, world Thata!
 
       - name: Install the dependencies
-        run: ./application/npm install
+        run: npm install
         
