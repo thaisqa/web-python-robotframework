@@ -1,16 +1,12 @@
 *** Settings ***
-Library         SeleniumLibrary
-Library         FakerLibrary    # robotcode: ignore
-Resource        setup_teardown.robot
-Test Setup      Open the browser
-Test Teardown   Close the browser
+Resource    ../main.robot
 
 *** Variables ***
 ${INPUT_NAME}             id:form-nome
-${INPUT_JOB}            id:form-cargo
-${INPUT_IMAGE}           id:form-imagem
+${INPUT_JOB}              id:form-cargo
+${INPUT_IMAGE}            id:form-imagem
 ${LIST_GROUP}             class:lista-suspensa
-${BUTTON_CARD}             id:form-botao
+${BUTTON_CARD}            id:form-botao
 
 @{select_time}
 ...    //option[contains(.,'Programação')]
@@ -21,21 +17,20 @@ ${BUTTON_CARD}             id:form-botao
 ...    //option[contains(.,'Mobile')]
 ...    //option[contains(.,'Inovação e Gestão')]
 
-${OPTION_PROGRAMACAO}    //option[contains(.,'Programação')]
+${BUTTON_CARD}             id:form-botao
 
+${OPTION_PROGRAMACAO}      //option[contains(.,'Programação')]
+${OPTION_FRONT}            //option[contains(.,'Front-End')]
+${OPTION_DADOS}            //option[contains(.,'Data Science')]
+${OPTION_DEVOPS}           //option[contains(.,'Devops')] 
+${OPTION_UX}               //option[contains(.,'UX e Design')]
+${OPTION_MOBILE}           //option[contains(.,'Mobile')]
+${OPTION_INOVACAO}         //option[contains(.,'Inovação e Gestão')]
+${CARD_COLABORADOR}       class:colaborador
 
-*** Test Cases ***
-Verify if is possible create more than 1 card
-    Given I input the informations on form
-    And I click on Create card button
-    Then Identify 3 cards on group
-
-Verify if is possible create 1 card for each group
-    Given I input the informations on form
-    Then create and identify 1 card in each group
 
 *** Keywords ***
-Given I input the informations on form
+ Given I input the informations on form
     ${Name}          FakerLibrary.First Name    # robotcode: ignore
     ${Job}           FakerLibrary.Job    # robotcode: ignore
     ${Image}         FakerLibrary.Image Url    # robotcode: ignore
@@ -62,3 +57,17 @@ Then create and identify 1 card in each group
         And I click on Create card button
         
     END
+
+Given I click on Create card button
+    Click Element    ${BUTTON_CARD}  
+
+Then The error message is visible
+    Element Should Be Visible    id:form-nome-erro
+    Element Should Be Visible    id:form-cargo-erro
+    Element Should Be Visible    id:form-times-erro
+
+When I click on Create card button
+    Click Element    ${BUTTON_CARD}  
+
+Then The new card is created
+    Element Should Be Visible    ${CARD_COLABORADOR}
