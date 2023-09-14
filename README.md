@@ -24,4 +24,6 @@
 
 
 ## Run the tests
+> $ cd tests-end-2-end
+
 > $ robot tests
